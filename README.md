@@ -14,6 +14,6 @@ the editor as well as the path to the todo file can be changed by editing the sc
 
 **install**
 
-it is recommended to put user scripts in `~/.local/bin`.
+it is recommended to put user scripts in `~/.local/bin` and add that to `$PATH`.
 
 download `td` and then `chmod +x td`
