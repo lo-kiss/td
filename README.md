@@ -5,7 +5,7 @@ a small bash todo utility for my personal needs
 
 `td` - to list the first 10 todos
 
-`td "Hi, mom!"` - to create a new todo
+`td "Hi, mom!" "Do the dishes"` - to create a new todo or multiple todos
 
 `td e` - to open the todo file in an editor
 
