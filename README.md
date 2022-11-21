@@ -3,7 +3,7 @@ a small bash todo utility for my personal needs
 
 #### usage
 
-`td` - to list all todos
+`td` - to list the first 10 todos
 
 `td "Hi, mom!"` - to create a new todo
 
