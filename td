@@ -15,18 +15,18 @@ if [[ ! -e $path ]]; then
 	exit 1
 fi
 
-if [[ $# > 1 ]]; then
-	echo "Too many arguments. Only one todo at a time."
-	exit 1
-elif [[ $1 ]]; then
+if [[ $# > 0 ]]; then
 	if [[ $1 == 'e' ]]; then
 		$editor $HOME/todo
 	elif [[ $1 == 'help' || $1 == '--help' || $1 == '-h' || $1 == 'h' ]]; then
-    echo "td - to list all todos"
+		echo "td - to list the first 10 todos"
 		echo "td \"Hi, mom!\" - to create a todo"
-    echo "td e - to open the todo file in $editor"
+		echo "td e - to open the todo file in $editor"
 	else
-    sed -i "1i [ ] $1 [$date]" $path
+		for arg in $@ 
+		do
+			sed -i "1i [ ] $arg [$date]" $path
+		done
 	fi
-else cat $path
+else head $path
 fi
