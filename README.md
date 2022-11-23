@@ -3,12 +3,7 @@ a small bash todo utility for my personal needs
 
 #### usage
 
-`td` - to list the first 10 todos
-
-`td "Hi, mom!" "Do the dishes"` - to create a new todo or multiple todos
-
-`td e` - to open the todo file in an editor
-
+`td h (or -h, --help, help)` to see the usage
 
 the editor as well as the path to the todo file can be changed by editing the script
 
